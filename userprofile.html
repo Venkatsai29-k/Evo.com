@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar-logo">
+          <img src="images/icons/image.png" alt="Logo" />
+        </div>
+        <div class="navbar-search">
+          <input type="search" placeholder="search" />
+          <button><img src="images/icons/search.png" alt="search" /></button>
+        </div>
+        <div class="icons">
+          <div>
+            <a href="#"
+              ><img
+                src="images/icons/heart.png"
+                alt=""
+                width="24px"
+                height="24px"
+            /></a>
+          </div>
+          <div class="noti">
+            <a href="#"
+              ><img
+                src="images/icons/notification.png"
+                alt=""
+                width="24px"
+                height="24px"
+            /></a>
+          </div>
+          <div class="cart">
+            <a href="#"
+              ><img
+                src="images/icons/cart.png"
+                alt=""
+                width="24px"
+                height="24px"
+            /></a>
+          </div>
+          <div class="user">
+            <a href="#">Login/Sign up</a>
+          </div>
+          <div class="profile">
+            <a href="#"
+              ><img
+                src="images/icons/profile.png"
+                alt=""
+                width="24px"
+                height="24px"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="center">
+            <div class="column">
+              <a href="#" class="tablinks" onclick="openTab(event, 'profile')"
+                >User Profile</a
+              >
+              <div id="profile" class="tabcontent">
+                <p>Pending</p>
+              </div>
+              <a href="#" class="tablinks" onclick="openTab(event, 'history')"
+                >Order History</a
+              >
+              <div id="history" class="tabcontent">
+                <p>No History of orders</p>
+                <button><a href="#">Shop now</a></button>
+              </div>
+              <a href="#" class="tablinks" onclick="openTab(event, 'support')"
+                >Customer Support</a
+              >
+              <div id="support" class="tabcontent">
+                <h1>1) Customer Support</h1>
+                <p>To Call immediately to our customer service</p>
+                <button><a href="#"></a>CALL</button>
+                <br />
+                <br />
+                <h1>2)Enter the issue through Mail</h1>
+                <p>
+                  Write a mail to us about the issue. Issues related with site
+                  malfunction, payment issues, Product delay or damaged
+                  products, etc.
+                </p>
+                <label for="email">Enter your Email:</label>
+                <input type="email" />
+                <br />
+                <br />
+                <label for="issues">Describe the issue:</label>
+                <input type="text" />
+                <p>
+                  Within 2 to 3 business days we will reply or solve the
+                  problem. We will intimate <br />
+                  you initially if the problem takes additional days to solve.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="containerFooter">
+        <div id="containerFooter">
+          <div class="navbar-logo">
+            <img src="images/icons/image.png" alt="Logo" />
+          </div>
+          <div id="webFooter">
+            <h3>Categories</h3>
+            <p>Personal Computers</p>
+            <p>Laptops</p>
+            <p>Gaming Laptops</p>
+            <p>Gaming Computers</p>
+          </div>
+          <div id="webFooter">
+            <h3>Laptops</h3>
+            <p>Laptop Accessories</p>
+            <p>Bluetooth devices</p>
+            <p>Bags</p>
+          </div>
+          <div id="webFooter">
+            <h3>Computer Hardware</h3>
+            <p>Intel & AMD Processor</p>
+            <p>Hardrive & SSD</p>
+            <p>SMPS & Cables</p>
+            <p>Mother Board</p>
+            <p>RAM</p>
+          </div>
+          <div id="webFooter">
+            <h3>Let us help you</h3>
+            <p>Your Account</p>
+            <p>Report an issue</p>
+            <p>Order History</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div id="webFooter">
+            <h3>Contact</h3>
+            <p></p>
+            <p>call support - 1188-6454-80</p>
+            <p>evo.electronics@gmail.com</p>
+          </div>
+        </div>
+      </section>
+      <div class="rights">
+        <p>
+          @copyright Evo.com <br />
+          All Right Reserverd
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
+</html>

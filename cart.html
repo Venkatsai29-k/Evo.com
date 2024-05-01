@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <style>
+    .forms2 h1 {
+      padding: 20px;
+    }
+    .forms2 .prising {
+      display: flex;
+      flex-direction: row;
+    }
+    .forms2 .prising h2 {
+      margin-top: 20px;
+      margin-left: 70px;
+      color: #327fc6;
+    }
+    .forms2 .prising h1 {
+      color: black;
+    }
+    .forms2 label {
+      display: block;
+      margin-bottom: 10px;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+    .forms2 label h2 {
+      margin-left: 50px;
+    }
+
+    .forms2 input[type="checkbox"] {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .forms2 p {
+      color: #8b8b8b;
+    }
+    .forms2 p,
+    .forms2 h2 {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+    }
+    .forms2 button {
+      width: 184px;
+      height: 38px;
+      border-radius: 19px;
+      background: var(--Primary-color-1, #327fc6);
+      border: none;
+      margin-left: 150px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .forms2 button a {
+      font-family: Poppins;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar-logo">
+          <img src="images/icons/image.png" alt="Logo" />
+        </div>
+        <div class="navbar-search">
+          <input type="search" placeholder="search" />
+          <button><img src="images/icons/search.png" alt="search" /></button>
+        </div>
+        <div class="icons">
+          <div>
+            <a href="#"
+              ><img
+                src="images/icons/heart.png"
+                alt=""
+                width="24px"
+                height="24px"
+            /></a>
+          </div>
+          <div class="noti">
+            <a href="#"
+              ><img
+                src="images/icons/notification.png"
+                alt=""
+                width="24px"
+                height="24px"
+            /></a>
+          </div>
+          <div class="cart">
+            <a href="#"
+              ><img
+                src="images/icons/cart.png"
+                alt=""
+                width="24px"
+                height="24px"
+            /></a>
+          </div>
+          <div class="user">
+            <a href="#">Login/Sign up</a>
+          </div>
+          <div class="profile">
+            <a href="#"
+              ><img
+                src="images/icons/profile.png"
+                alt=""
+                width="24px"
+                height="24px"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="carts">
+        <div class="top1">
+          <h1>Cart</h1>
+          <p>items: 2</p>
+        </div>
+        <div class="cart1">
+          <div>
+            <img src="images/cart-img/image.png" alt="" />
+          </div>
+          <div>
+            <h2>HP Laptop 15s</h2>
+            <p>
+              12th Gen Intel Core i5-1235U, 15.6-inch (39.6 cm), FHD, 16GB DDR4,
+              512GB <br />
+              SSD, Intel Iris Xe Graphics, Backlit KB,MSO,Thin & Light, Dual
+              Speakers (Win <br />
+              11, Silver, 1.69 kg), fq5330TU
+            </p>
+            <h4>With Extended warranty for 1 year - Rs.1590/-</h4>
+          </div>
+          <div><h1>Rs. 55,312/-</h1></div>
+        </div>
+        <div class="cart2">
+          <div>
+            <img src="images/cart-img/earphones.png" alt="" />
+          </div>
+          <div>
+            <h2>Zebronics Thunder bluetooth</h2>
+            <p>
+              Zebronics Thunder bluetooth Wireless Headphones with 60H Backup,
+              <br />
+              Gaming Mode, Dual Pairing, ENC, AUX, Micro SD, Voice assistant,
+              <br />
+              Comfortable Earcups, Call Function(Black)
+            </p>
+          </div>
+          <div>
+            <h1>Rs. 758/-</h1>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="forms1">
+          <h1>Delivery Details</h1>
+          <form action="">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" required />
+            </div>
+            <div>
+              <label for="email">Email ID</label>
+              <input type="email" required />
+            </div>
+            <div>
+              <label for="phone">Mobile Number</label>
+              <input type="phone" required />
+            </div>
+            <div>
+              <label for="phone">Delivery address</label> <br />
+              <label for="phone">House no & street</label>
+              <input type="text" required />
+            </div>
+            <div>
+              <label for="city">City & state</label>
+              <input type="text" required />
+            </div>
+            <div>
+              <label for="pincode">Pincode:</label>
+              <input type="pincode" required />
+            </div>
+          </form>
+          <div class="methods">
+            <h1>Select Payment method</h1>
+            <div>
+              <input type="checkbox" id="credit_debit_card" />
+              <label for="credit_debit_card">Credit card or Debit card.</label>
+            </div>
+            <br />
+            <div>
+              <input type="checkbox" id="upi_transaction" />
+              <label for="upi_transaction"
+                >UPI Transaction - Gpay and PayPal.</label
+              >
+            </div>
+            <br />
+            <div>
+              <input type="checkbox" id="net_banking" />
+              <label for="net_banking">Net banking</label>
+            </div>
+            <br />
+            <div>
+              <input type="checkbox" id="cash_on_delivery" />
+              <label for="cash_on_delivery">Cash on delivery</label>
+            </div>
+            <br />
+            <div>
+              <input type="checkbox" id="emi_option" />
+              <label for="emi_option"
+                >EMI option (This product is eligible for No-cost EMI)</label
+              >
+            </div>
+            <h1>Payment method is not selected</h1>
+            <p>Select any one to add details and complete the process.</p>
+            <p>
+              If you had already logged in and entered all details. It will be
+              filled <br />
+              automatically,but if you haven’t, Then you can enter above.
+            </p>
+          </div>
+        </div>
+        <div class="forms2">
+          <h1>Price Details</h1>
+          <div>
+            <label>
+              <input type="checkbox" />
+              <p>HP laptop 15s</p>
+              <h2>Rs. 53,722</h2>
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" />
+              <p>Zebronics Bluetooth Heaphone</p>
+              <h2>Rs. 758</h2>
+            </label>
+          </div>
+          <div class="prising">
+            <div>
+              <h1>Grand Total</h1>
+            </div>
+            <div><h2>Rs. 56,070</h2></div>
+          </div>
+          <button><a href="#">complete Payment</a></button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="containerFooter">
+        <div id="containerFooter">
+          <div class="navbar-logo">
+            <img src="images/icons/image.png" alt="Logo" />
+          </div>
+          <div id="webFooter">
+            <h3>Categories</h3>
+            <p>Personal Computers</p>
+            <p>Laptops</p>
+            <p>Gaming Laptops</p>
+            <p>Gaming Computers</p>
+          </div>
+          <div id="webFooter">
+            <h3>Laptops</h3>
+            <p>Laptop Accessories</p>
+            <p>Bluetooth devices</p>
+            <p>Bags</p>
+          </div>
+          <div id="webFooter">
+            <h3>Computer Hardware</h3>
+            <p>Intel & AMD Processor</p>
+            <p>Hardrive & SSD</p>
+            <p>SMPS & Cables</p>
+            <p>Mother Board</p>
+            <p>RAM</p>
+          </div>
+          <div id="webFooter">
+            <h3>Let us help you</h3>
+            <p>Your Account</p>
+            <p>Report an issue</p>
+            <p>Order History</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div id="webFooter">
+            <h3>Contact</h3>
+            <p></p>
+            <p>call support - 1188-6454-80</p>
+            <p>evo.electronics@gmail.com</p>
+          </div>
+        </div>
+      </section>
+      <div class="rights">
+        <p>
+          @copyright Evo.com <br />
+          All Right Reserverd
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
